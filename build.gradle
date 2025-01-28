@@ -30,5 +30,6 @@ tasks.named('test') {
 }
 
 bootJar {
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE // Exclude duplicate entries
 	archiveFileName = 'java-react.jar'
 }
