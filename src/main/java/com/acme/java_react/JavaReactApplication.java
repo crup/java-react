@@ -18,7 +18,7 @@ public class JavaReactApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/api/**").allowedOrigins("http://localhost:5173");
+				registry.addMapping("/api/**").allowedOrigins("http://127.0.0.1:8080");
 			}
 		};
 	}
